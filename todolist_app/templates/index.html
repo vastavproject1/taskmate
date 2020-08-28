@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    <title>Home page</title>
+ {% endblock title %}
+
+   {% block content %}
+        <div class="container">
+        <h1>{{ index_text }}</h1>
+        <br>
+        <div class="row">
+          <div class="col ">
+              <img src="{% static 'images\home.png' %}"class="rounded" width="300" height="300">
+          </div>
+          <div class="col">
+              <img src="{% static 'images\home.png' %}" class="rounded"width="300" height="300">
+          </div>
+          <div class="col">
+              <img src="{% static 'images\home.png' %}" class="rounded"width="300" height="300">
+          </div>
+        </div>
+      </div>
+      
+     
+        </div>
+    {% endblock content %}
